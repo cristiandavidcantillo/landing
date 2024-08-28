@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlante</title>
+
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    
+    <style>
+        *{
+            background-color: #060e19;
+        }
+        
+        #content_hyled5020g4km .subtitulo {
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.4em;
+            color: #777777;
+        }
+
+        #content_hyled5020g4km .parrafo {
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05em;
+            color: #777777;
+        }
+
+        #content_hyled5020g4km .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #content_hyled5020g4km .align-last-center {
+            text-align-last: center;
+        }
+
+        #content_hyled5020g4km .align-last-right {
+            text-align-last: right;
+        }
+
+        #content_hyled5020g4km .align-last-left {
+            text-align-last: left;
+        }
+
+        #content_hyled5020g4km .align-middle {
+            display: flex;
+            align-items: center;
+        }
+
+        #content_hyled5020g4km .fondo-oscuro {
+            background-color: #060e19;
+        }
+
+        #content_hyled5020g4km .espacio-texto {
+            margin-bottom: 0.5em;
+        }
+
+        #content_hyled5020g4km .espacio-imagen {
+            margin-bottom: 2em;
+        }
+
+        #content_hyled5020g4km .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #content_hyled5020g4km .row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        #content_hyled5020g4km * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        #content_hyled5020g4km div {
+            display: block;
+        }
+
+        #content_hyled5020g4km .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+
+        #content_hyled5020g4km img {
+            vertical-align: middle;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+            border: 0;
+        }
+
+        #content_hyled5020g4km .text-center {
+            text-align: center;
+        }
+
+        #content_hyled5020g4km .text-justify {
+            text-align: justify;
+        }
+
+        #content_hyled5020g4km p {
+            margin: 0 0 10px;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        #content_hyled5020g4km h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            line-height: 1.1;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        #content_hyled5020g4km #content_hyled5020g4km .col-sm-1, #content_hyled5020g4km #content_hyled5020g4km .col-sm-10, #content_hyled5020g4km #content_hyled5020g4km .col-sm-11, #content_hyled5020g4km #content_hyled5020g4km .col-sm-12, #content_hyled5020g4km #content_hyled5020g4km .col-sm-2, #content_hyled5020g4km #content_hyled5020g4km .col-sm-3, #content_hyled5020g4km #content_hyled5020g4km .col-sm-4, #content_hyled5020g4km #content_hyled5020g4km .col-sm-5, #content_hyled5020g4km #content_hyled5020g4km .col-sm-6, #content_hyled5020g4km #content_hyled5020g4km .col-sm-7, #content_hyled5020g4km #content_hyled5020g4km .col-sm-8, #content_hyled5020g4km #content_hyled5020g4km .col-sm-9, #content_hyled5020g4km .col-xs-1, #content_hyled5020g4km .col-xs-10, #content_hyled5020g4km .col-xs-11, #content_hyled5020g4km .col-xs-12, #content_hyled5020g4km .col-xs-2, #content_hyled5020g4km .col-xs-3, #content_hyled5020g4km .col-xs-4, #content_hyled5020g4km .col-xs-5, #content_hyled5020g4km .col-xs-6, #content_hyled5020g4km .col-xs-7, #content_hyled5020g4km .col-xs-8, #content_hyled5020g4km .col-xs-9 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        #content_hyled5020g4km .col-xs-1, #content_hyled5020g4km .col-xs-10, #content_hyled5020g4km .col-xs-11, #content_hyled5020g4km .col-xs-12, #content_hyled5020g4km .col-xs-2, #content_hyled5020g4km .col-xs-3, #content_hyled5020g4km .col-xs-4, #content_hyled5020g4km .col-xs-5, #content_hyled5020g4km .col-xs-6, #content_hyled5020g4km .col-xs-7, #content_hyled5020g4km .col-xs-8, #content_hyled5020g4km .col-xs-9 {
+            float: left;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-0 {
+            margin-left: 0;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-1 {
+            margin-left: 8.33333333%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-2 {
+            margin-left: 16.66666667%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-3 {
+            margin-left: 25%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-4 {
+            margin-left: 33.33333333%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-5 {
+            margin-left: 41.66666667%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-6 {
+            margin-left: 50%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-7 {
+            margin-left: 58.33333333%;
+        }
+
+        #content_hyled5020g4km .col-xs-offset-8 {
+            margin-left: 66.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-offset-9 {
+            margin-left: 75%;
+        }
+        #content_hyled5020g4km .col-xs-offset-10 {
+            margin-left: 83.33333333%;
+        }
+        #content_hyled5020g4km .col-xs-offset-11 {
+            margin-left: 91.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-offset-12 {
+            margin-left: 100%;
+        }
+
+        #content_hyled5020g4km .col-xs-1 {
+            width: 8.33333333%;
+        }
+        #content_hyled5020g4km .col-xs-2 {
+            width: 16.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-3 {
+            width: 25%;
+        }
+        #content_hyled5020g4km .col-xs-4 {
+            width: 33.33333333%;
+        }
+        #content_hyled5020g4km .col-xs-5 {
+            width: 41.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-6 {
+            width: 50%;
+        }
+        #content_hyled5020g4km .col-xs-7 {
+            width: 58.33333333%;
+        }
+        #content_hyled5020g4km .col-xs-8 {
+            width: 66.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-9 {
+            width: 75%;
+        }
+        #content_hyled5020g4km .col-xs-10 {
+            width: 83.33333333%;
+        }
+        #content_hyled5020g4km .col-xs-11 {
+            width: 91.66666667%;
+        }
+        #content_hyled5020g4km .col-xs-12 {
+            width: 100%;
+        }
+
+        #content_hyled5020g4km .col-12 {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            #content_hyled5020g4km .col-sm-offset-0 {
+                margin-left: 0;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-1 {
+                margin-left: 8.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-2 {
+                margin-left: 16.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-3 {
+                margin-left: 25%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-4 {
+                margin-left: 33.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-5 {
+                margin-left: 41.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-6 {
+                margin-left: 50%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-7 {
+                margin-left: 58.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-8 {
+                margin-left: 66.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-9 {
+                margin-left: 75%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-10 {
+                margin-left: 83.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-11 {
+                margin-left: 91.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-offset-12 {
+                margin-left: 100%;
+            }
+
+            #content_hyled5020g4km .col-sm-1 {
+                width: 8.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-2 {
+                width: 16.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-3 {
+                width: 25%;
+            }
+
+            #content_hyled5020g4km .col-sm-4 {
+                width: 33.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-5 {
+                width: 41.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-6 {
+                width: 50%;
+            }    
+
+            #content_hyled5020g4km .col-sm-7 {
+                width: 58.33333333%;
+            }
+            
+            #content_hyled5020g4km .col-sm-8 {
+                width: 66.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-9 {
+                width: 75%;
+            }
+
+            #content_hyled5020g4km .col-sm-10 {
+                width: 83.33333333%;
+            }
+
+            #content_hyled5020g4km .col-sm-11 {
+                width: 91.66666667%;
+            }
+
+            #content_hyled5020g4km .col-sm-12 {
+                width: 100%;
+            }
+
+            #content_hyled5020g4km .col-sm-1, #content_hyled5020g4km .col-sm-10, #content_hyled5020g4km .col-sm-11, #content_hyled5020g4km .col-sm-12, #content_hyled5020g4km .col-sm-2, #content_hyled5020g4km .col-sm-3, #content_hyled5020g4km .col-sm-4, #content_hyled5020g4km .col-sm-5, #content_hyled5020g4km .col-sm-6, #content_hyled5020g4km .col-sm-7, #content_hyled5020g4km .col-sm-8, #content_hyled5020g4km .col-sm-9 {
+                float: left;
+            }
+        }
+
+
+        @media (min-width: 1014px) {
+            #content_hyled5020g4km .subtitulo {
+                font-size: 3.2em;
+            }
+            #content_hyled5020g4km .parrafo {
+                font-size: 1.4em;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #content_hyled5020g4km .hmax-auto {
+                max-height: 50vh;
+            }
+            #content_hyled5020g4km .subtitulo div {
+                display: inline-block !important;
+            }
+
+            #content_hyled5020g4km .subtitulo {
+                text-align: center !important;
+            }
+
+            #content_hyled5020g4km .parrafo {
+                text-align: justify !important;
+            }
+
+            #content_hyled5020g4km .align-middle {
+                display: block;
+            }
+
+            #content_hyled5020g4km .align-last-right {
+                text-align-last: center;
+            }
+
+            #content_hyled5020g4km .align-last-left {
+                text-align-last: center;
+            }
+
+            #content_hyled5020g4km .reset-margin {
+                margin: 0 !important;
+                border-right: 0px !important;
+                border-left: 0px !important;
+                padding: 0 !important;
+            }
+
+            #content_hyled5020g4km .no-display {
+                display: none;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+    
+    <div class="container-fluid" id="content_hyled5020g4km">
+        <!-- Section Banner Header -->
+        <div class="row">
+            <div class="col-12 espacio-imagen">
+                <img class="img-responsive" src="./img/Parlante-1.png" alt="Parlante Hyundai">
+            </div>
+        </div>
+       
+       
+    
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 espacio-imagen">
+                <img class="img-responsive mx-auto" src="./img_hyled5020g4km/img4_hyled5020g4km.png" alt="Con tecnolofía HDR10 y Dolby Audio">
+            </div>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 espacio-imagen">
+                <p class="text-justify parrafo align-last-center">
+                    Nuestros televisores cuentan con tecnología que te ofrece imágenes increíblemente nítidas y detalladas,
+                    más realistas, con mayor brillo y mejores colores, que te harán sentir como si estuvieras dentro de las
+                    escenas de tus series y películas favoritas.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 espacio-imagen">
+                <img class="img-responsive" src="./img_hyled5020g4km/img5_hyled5020g4km.png" alt="Diseño sin Bordes">
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h3 class="subtitulo text-center espacio-texto">
+                    <div>Procesador</div>
+                    <div>Quad Core</div>
+                </h3>
+                <p class="text-justify parrafo align-last-center espacio-texto">
+                    Procesador Quad Core ARM de 4 núcleos en nuestros televisores con velocidad cercana a los 1,5 Megahertz
+                    con capacidad de manejar múltiples tareas al mismo tiempo.
+                </p>
+                <p class="text-justify parrafo align-last-center">
+                    Además, el procesador Quad Core ARM también mejora la calidad de imagen y el rendimiento de sonido,
+                    permitiendo disfrutar de tus películas y programas de televisión con una claridad y nitidez excepcionales.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 espacio-imagen">
+                <img class="img-responsive" src="./img_hyled5020g4km/img6_hyled5020g4km.png" alt="Procesador ARM Cortex Quad core">
+            </div>
+        </div>
+        <div class="row align-middle reset-margin espacio-imagen">
+            <div class="col-sm-3 col-sm-offset-1 col-xs-offset-4 col-xs-4">
+                <img class="img-responsive mx-auto hmax-auto" src="./img_hyled5020g4km/img7_hyled5020g4km.png" alt="Control Inteligente">
+            </div>
+            <div class="col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <div class="col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+                    <img class="img-responsive mx-auto" src="./img_hyled5020g4km/img8_hyled5020g4km.png" alt="Google Assistant">
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h3 class="subtitulo text-center espacio-texto">
+                        <div>
+                            Control con
+                        </div>
+                        <div>
+                            Asistente de voz
+                        </div>
+                    </h3>
+                    <p class="text-justify parrafo align-last-right espacio-texto col-xs-12">
+                        El nuevo control remoto Google con asistente de voz te permite cambiar
+                        de canal, ajustar el volumen y buscar contenido sin mover un dedo.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <h3 class="subtitulo text-center espacio-texto">
+                        ¡Más fácil imposible!
+                    </h3>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                        <img class="img-responsive mx-auto espacio-texto" src="./img_hyled5020g4km/img9_hyled5020g4km.png" alt="Más fácil imposible">
+                    </div>
+                    <p class="text-justify parrafo align-last-right espacio-texto col-xs-12">
+                        Gracias a la inteligencia artificial, te dará recomendaciones basadas
+                        en tus gustos para que el entretenimiento nunca se detenga.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row espacio-texto">
+            <div class="col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="./img_hyled5020g4km/img10_hyled5020g4km.png" alt="Google TV">
+                </div>                
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h3 class="subtitulo text-center espacio-texto">Sencillo y diferente</h3>
+                <p class="text-justify parrafo align-last-center">
+                    ¡Google TV llegó para mejorar tu vida!
+                </p>
+                <p class="text-justify parrafo align-last-center">
+                    Podrás acceder fácilmente a más de 10.000 aplicaciones ¡Todo en un solo lugar!
+                </p>
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-12">
+                <img class="img-responsive" src="./img_hyled5020g4km/img11_hyled5020g4km.png" alt="Google Play con miles de apps">
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-12">
+                <img class="img-responsive" src="./img_hyled5020g4km/img12_hyled5020g4km.png" alt="Google Play con miles de apps">
+            </div>
+        </div>
+        <div class="row espacio-texto">
+            <div class="col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <img class="img-responsive" src="./img_hyled5020g4km/img13_hyled5020g4km.png" alt="Google TV">
+                </div>                
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h3 class="subtitulo text-center espacio-texto">
+                    <div>
+                        Personaliza 
+                    </div>
+                    <div>
+                        tus espacios
+                    </div>
+                </h3>
+                <p class="text-justify parrafo align-last-center">
+                    Google Tv te ofrece la opción de crear y gestionar diferentes cuentas, teniendo así
+                    entretenimiento personalizado para todos en tu hogar.
+                </p>
+            </div>
+        </div>
+        <div class="row espacio-texto">
+            <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                <img class="img-responsive" src="./img_hyled5020g4km/img14_hyled5020g4km.png" alt="Google TV">
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-12">
+                <img class="img-responsive" src="./img_hyled5020g4km/img15_hyled5020g4km.png" alt="Dolby Atmos">
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <img class="img-responsive" src="./img_hyled5020g4km/img16_hyled5020g4km.png" alt="Dolby Atmos">
+                </div>                
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-xs-offset-0">
+                <p class="text-justify parrafo align-last-center">
+                    Percibe el audio de tus series favoritas de una forma cinematográfica, con sonido envolvente, claro, intenso
+                    y con detalles llenos de realismo.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 espacio-texto">
+                <h3 class="subtitulo text-center">
+                    Conectividad sin límites
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 espacio-imagen">
+                <img class="img-responsive mx-auto" src="./img_hyled5020g4km/img17_hyled5020g4km.png" alt="Conectividad Wifi, Bluetooth 5.0 y Google Home">
+            </div>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 espacio-imagen">
+                <p class="text-justify parrafo align-last-center">
+                    Con la tecnología I.O.T puedes sincronizar y acceder al contenido de varios dispositivos desde un solo lugar.
+                </p>
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+                <img class="img-responsive" src="./img_hyled5020g4km/img18_hyled5020g4km.png" alt="Vive una experiencia completa">
+            </div>
+        </div>
+        <div class="row espacio-imagen">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h3 class="subtitulo text-center espacio-texto">
+                    <div>
+                        Vive una experiencia 
+                    </div>
+                    <div>
+                        Smart Tv completa
+                    </div>
+                </h3>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <p class="text-center parrafo">
+                    - Todo lo que quieres ver en una sola pantalla
+                </p>
+                <p class="text-center parrafo">
+                    - Imágenes más realistas con sonido envolvente
+                </p>
+                <p class="text-center parrafo">
+                    - Un espacio para todos en un mismo dispositivo
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
